@@ -1,16 +1,21 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import {
+  Swipe,
+  SwipeItem,
+  Lazyload
+} from 'vant'
 // import Vant from 'vant';
 // import 'vant/lib/index.css';
-import store from './store'
+// import store from './store'
 
-// Vue.use(Vant);
+Vue.use(Swipe).use(SwipeItem).use(Lazyload)
 
 
 new Vue({
   router,
-  store,
+  // store,
   render: h => h(App)
 }).$mount("#app")
 
