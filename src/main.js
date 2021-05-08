@@ -13,6 +13,9 @@ import {
 Vue.use(Swipe).use(SwipeItem).use(Lazyload)
 
 
+// 在Vue原型上增加事件总线
+Vue.prototype.$bus = new Vue()
+
 new Vue({
   router,
   // store,
